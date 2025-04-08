@@ -10,6 +10,7 @@
 **Refactor**
 - [ ] Separate model for return in GET API, instead of underlying state model 
 - [ ] Health - not checking full stack
+- [ ] Change the code_chunker to use the LangChain Antrhopic LLM functions
 
 **Rules**
 - [ ] Remove __init__ everywhere
