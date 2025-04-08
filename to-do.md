@@ -12,6 +12,7 @@
 - [ ] Health - not checking full stack
 - [ ] Change the code_chunker to use the LangChain Antrhopic LLM functions
 - [ ] Automatically remove tree sitter if above a certain size
+- [ ] use S3 for repository cloning temp file 
 
 **Rules**
 - [ ] Remove __init__ everywhere
