@@ -4,7 +4,12 @@
 - [ ] Running locally without docker watch
 
 **Tests** 
-- [ ] POST API - happy path (returns 200, call DB correct, async agent OK) & invalid URL
-- [ ] GET API - happy path and no URL
+- [ ] POST API - happy path (returns 201, call DB correctly, async agent OK) & invalid URL
+- [ ] GET API - happy path and invalid id
 
-- [ ] Running locally
+**Refactor**
+- [ ] Separate model for return in GET API, instead of underlying state model 
+- [ ] Health - not checking full stack
+
+**Rules**
+- [ ] Remove __init__ everywhere
