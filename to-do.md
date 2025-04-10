@@ -3,6 +3,10 @@
 - [x] pre-commit and local venv
 - [x] Running locally without docker watch
 
+**POC** 
+- [ ] Is it accurate? Test with well-known code base
+- [ ] Can it handle a large code base?
+
 **Tests** 
 - [ ] POST API - happy path (returns 201, call DB correctly, async agent OK) & invalid URL
 - [ ] GET API - happy path and invalid id
