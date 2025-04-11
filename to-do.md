@@ -6,12 +6,26 @@
 **POC** 
 - [ ] Is it accurate? Test with well-known code base
 - [ ] Can it handle a large code base?
+- [ ] Prompt improvements
+
+**Productionisation**
+- [ ] Tests 
+- [ ] Refactoring
+- [ ] Error handling 
+- [ ] Monitoring & observatiblity
+- [ ] A front end! 
+- [ ] Human in the loop
+
+---
 
 **Tests** 
 - [ ] POST API - happy path (returns 201, call DB correctly, async agent OK) & invalid URL
 - [ ] GET API - happy path and invalid id
 - [ ] Unit test for the reducer unique_code_chunks_reducer
 - [ ] File exclusions 
+- [ ] Test for each node
+
+---
 
 **Refactor**
 - [x] Separate model for return in GET API, instead of underlying state model 
@@ -26,8 +40,7 @@
 - [ ] Error handling - propagate back to graph and get graph to fail and exit
 - [ ] Add an "llm client factory" that returns the model with settings like retry. Can also have a local mode that returns a local model
 
-**Rules**
-- [ ] Remove \_init\_ everywhere?
+****
 
 **API Error Handling**
 https://docs.anthropic.com/en/api/errors 
@@ -58,8 +71,12 @@ So for 429 we can retry using
 
 500 & 529 - We can have an exponential backoff for these errors
 
+---
+
 **Token Use Management**
 As well as rate limits, we need to ensure that we don't exceed the amount of tokens that is allowed by per call. This can achieved using anthropic following this https://docs.anthropic.com/en/docs/build-with-claude/token-counting, as well as using libraries like tiktoken 
+
+---
 
 **Rate Limits** **& API Keys**
 The agent is making a lot of API calls. An option at our disposal is to use multiple api keys for the different calls.  We could even dynamically rotate them potentially
