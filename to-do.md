@@ -4,9 +4,9 @@
 - [x] Running locally without docker watch
 
 **POC** 
-- [ ] Generate stories & features
-- [ ] Prompt improvements
-- [ ] Test for each node
+- [x] Generate stories & features
+- [x] Prompt improvements
+- [x] Runner for each node
 - [ ] Is it accurate? Test with well-known code base
 - [ ] Can it scale? Test with a large code base
 
